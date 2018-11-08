@@ -51,6 +51,15 @@
                 android:layout_height="1dp"
                 android:background="#fff" />
 
+            <Button
+                android:id="@+id/signOutButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/colorAccent"
+                android:text="@string/btn_sign_out"
+                android:textColor="@android:color/black" />
+
 
         </LinearLayout>
 
