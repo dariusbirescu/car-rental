@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#00bcd4</color>
-    <color name="colorPrimaryDark">#0097a7</color>
-    <color name="colorAccent">#f2fe71</color>
-
     <color name="bg_login">#26ae90</color>
     <color name="bg_register">#2e3237</color>
     <color name="bg_main">#428bca</color>
@@ -17,4 +13,23 @@
     <color name="btn_login_bg">#eceef1</color>
     <color name="lbl_name">#333333</color>
     <color name="btn_logut_bg">#ff6861</color>
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="colorPrimary">#278be3</color>
+    <color name="colorPrimaryDark">#0f5998</color>
+    <color name="colorAccent">#0f5998</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+    <color name="colorDarkGray">#0f5998</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="Press">#C0D7EE</color>
+    <color name="blue1">#59B7FA</color>
+    <color name="blueNormal">#1E9CF6</color>
+    <color name="bluePressed">#145ACA</color>
+    <color name="coloNavBarProfile">#fff</color>
+    <color name="coloNavTextBarProfile">#278be3</color>
+    <color name="coloIconNavBarProfile">#278be3</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTransaprent">#0d000000</color>
+    <color name="Transparent100">#00000000</color>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navbar_home"
+        android:icon="@drawable/home_24dp"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/navbar_add_car"
+        android:icon="@drawable/add_car_24dp"
+        android:title="@string/add_car" />
+
+
+    <item
+        android:id="@+id/navbar_profile"
+        android:icon="@drawable/profile_24dp"
+        android:title="@string/profile" />
+
+
+
+</menu>
