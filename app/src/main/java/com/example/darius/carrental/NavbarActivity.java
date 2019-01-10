@@ -42,6 +42,9 @@ public class NavbarActivity extends AppCompatActivity  implements BottomNavigati
             case R.id.navbar_profile:
                 fragment = new ProfileFragment();
                 break;
+            default:
+                fragment = new HomeFragment();
+                break;
         }
 
         return loadFragment(fragment);

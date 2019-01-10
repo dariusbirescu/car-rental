@@ -14,7 +14,7 @@ import com.example.darius.carrental.R;
 public class HomeFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.empty_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
         FrameLayout mainGrid = (FrameLayout) view.findViewById(R.id.fragment_container);
         return  view;
     }
