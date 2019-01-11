@@ -25,6 +25,7 @@ public class CarRentalActivity extends AppCompatActivity {
 
         // Recieve data
         Intent intent = getIntent();
+        System.out.println(intent.getExtras());
         String Model = intent.getExtras().getString("Model");
         String Year = intent.getExtras().getString("Year");
         String Price = intent.getExtras().getString("Price");

@@ -25,7 +25,6 @@ public class OffersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.activity_offers, container, false);
-        FrameLayout mainGrid = (FrameLayout) view.findViewById(R.id.fragment_container);
         super.onCreate(savedInstanceState);
 
         cars = new ArrayList<>();
@@ -45,7 +44,7 @@ public class OffersFragment extends Fragment {
         cars.add(new Car("The Martian","Categorie Car","Description book",R.drawable.themartian));
         cars.add(new Car("He Died with...","Categorie Car","Description book",R.drawable.hediedwith));
 
-        RecyclerView myrv = (RecyclerView) getActivity().findViewById(R.id.recyclerview_id);
+        RecyclerView myrv = view.findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myAdapter = new RecyclerViewAdapter(getContext(), cars);
         myrv.setLayoutManager(new GridLayoutManager(getContext(),3));
         myrv.setAdapter(myAdapter);
