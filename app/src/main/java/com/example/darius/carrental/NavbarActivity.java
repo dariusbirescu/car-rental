@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.example.darius.carrental.fragments.HomeFragment;
+import com.example.darius.carrental.fragments.OffersFragment;
 import com.example.darius.carrental.fragments.ProfileFragment;
 
 public class NavbarActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -34,7 +35,7 @@ public class NavbarActivity extends AppCompatActivity  implements BottomNavigati
 
         switch (item.getItemId()) {
             case R.id.navbar_home:
-                fragment = new HomeFragment();
+                fragment = new OffersFragment();
                 break;
             case R.id.navbar_add_car:
                 fragment = new HomeFragment();

@@ -25,13 +25,14 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".ResetPasswordActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".CarRentalActivity" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme" />
-        <!--<activity android:name=".NavbarActivity"></activity>-->
+        <!-- <activity android:name=".NavbarActivity"></activity> -->
         <activity android:name=".NavbarActivity" />
-
+        <activity android:name=".Offers"></activity>
     </application>
 
 </manifest>

@@ -42,5 +42,6 @@
     <string name="home">home</string>
     <string name="profile">Profile</string>
     <string name="add_car">Add a car</string>
+    <string name="buttonRent">Rent this car</string>
 
 </resources>
