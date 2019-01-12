@@ -20,7 +20,7 @@ public class NavbarActivity extends AppCompatActivity  implements BottomNavigati
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navbar);
-        loadFragment(new HomeFragment());
+        loadFragment(new OffersFragment());
 
         //getting bottom navigation view and attaching the listener
         BottomNavigationView navigation = findViewById(R.id.navigation);
@@ -44,7 +44,7 @@ public class NavbarActivity extends AppCompatActivity  implements BottomNavigati
                 fragment = new ProfileFragment();
                 break;
             default:
-                fragment = new HomeFragment();
+                fragment = new OffersFragment();
                 break;
         }
 

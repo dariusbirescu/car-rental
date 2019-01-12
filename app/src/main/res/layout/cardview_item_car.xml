@@ -18,12 +18,11 @@
             android:id="@+id/car_img"
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:scaleType="centerCrop"
-            android:background="#2d2d2d"/>
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/Model"
-            android:textColor="#2d2d2d"
+            android:textColor="#FFF"
             android:textSize="13sp"
             android:gravity="center"
             android:layout_width="match_parent"

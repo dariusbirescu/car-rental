@@ -2,6 +2,9 @@ package com.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -11,19 +14,26 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.darius.carrental.Car;
 import com.example.darius.carrental.CarRentalActivity;
+import com.example.darius.carrental.ImageAdapter;
 import com.example.darius.carrental.R;
+import com.example.darius.carrental.Upload;
 
+import java.io.ByteArrayOutputStream;
+import java.net.URI;
+import java.net.URL;
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.MyViewHolder> {
 
     private Context mContext ;
-    private List<Car> mData ;
+    private List<Upload> mData ;
+    Bitmap _bitmap;
 
 
-    public RecyclerViewAdapter(Context mContext, List<Car> mData) {
+    public RecyclerViewAdapter(Context mContext, List<Upload> mData) {
         this.mContext = mContext;
         this.mData = mData;
     }
@@ -40,8 +50,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
 
+        Upload uploadCurrent=mData.get(position);
+        Uri uri =  Uri.parse(uploadCurrent.getmImageUrl());
+
+
         holder.model.setText(mData.get(position).getModel());
-        holder.car_image.setImageResource(mData.get(position).getThumbnail());
+        Glide.with(mContext).load(uploadCurrent.getmImageUrl()).into(holder.car_image);
+        //holder.car_image.setImageURI(uri);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,8 +65,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtra("Model",mData.get(position).getModel());
                 intent.putExtra("Price",mData.get(position).getPrice());
                 intent.putExtra("Year",mData.get(position).getYear());
-                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
+                intent.putExtra("Url",mData.get(position).getmImageUrl());
+                intent.putExtra("id",mData.get(position).getId());
                 // start the activity
+
+
                 mContext.startActivity(intent);
 
             }

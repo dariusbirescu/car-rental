@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CarRentalActivity"
-    android:background="#fcfcfc">
+    tools:context=".CarRentalActivity">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:padding="10dp">
+        android:layout_margin="10dp"
+        android:padding="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:padding="12dp"
+            android:background="@color/colorTransaprent"
+            android:layout_gravity="center"
+            android:padding="50dp"
             android:orientation="vertical">
 
             <ImageView
@@ -27,42 +28,88 @@
                 android:id="@+id/carthumbnail"
                 android:scaleType="centerCrop"/>
 
-            <TextView
-                android:id="@+id/Model"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Model"
-                android:layout_marginTop="10dp"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="textStart"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/Year"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Year"
-                android:padding="12dp"
-                android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="Model: "
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/Model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/Details"
-                android:textSize="18sp"
-                android:layout_marginTop="10dp"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pricefsdfsfsssssssssfsfdsffffffffsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddfffffssfdsfsfsdfs"/>
-            <TextView
-                android:id="@+id/Price"
-                android:textSize="18sp"
-                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="textStart"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="Year: "
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/Year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1992"
+                    android:layout_weight="1"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Price"/>
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:textAlignment="textStart"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="Price: "
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    />
+                <TextView
+                    android:id="@+id/Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12.222$"
+                    android:layout_weight="1"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
+                android:id="@+id/rentCar"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorAccent"
                 android:text="@string/buttonRent"
-                android:layout_height="wrap_content" />
+                android:textColor="@color/backgroundGray"
+                android:textSize="14sp"
+                android:typeface="normal" />
 
 
 

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:theme="@android:style/Theme.Material.NoActionBar"
     android:gravity="center"
-    android:background="#FF212121"
     android:layout_height="match_parent"
     tools:context=".CarRentalActivity">
 
@@ -20,11 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:background="#FF515151"
+            android:background="@drawable/transparent"
             android:gravity="center"
+            android:padding="20dp"
             android:orientation="vertical">
 
             <ImageButton
+                android:id="@+id/choosePictureButton"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="@drawable/add_photo"/>
@@ -47,9 +48,7 @@
                         android:layout_height="wrap_content"
                         android:text="Model:"
                         android:layout_weight="2"
-
                         android:textSize="18sp"
-                        android:textColor="#444242"
                         />
                     <EditText
                         android:layout_width="wrap_content"
@@ -58,10 +57,10 @@
                         android:drawableLeft="@drawable/car_24dp"
                         android:drawablePadding="12dp"
                         android:ems="10"
-                        android:textColor="#FFF"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:padding="8dp"
+                        android:backgroundTint="@color/backgroundGray"
                         android:textColorHint="#fff"
                         android:id="@+id/Model"/>
                 </LinearLayout>
@@ -76,19 +75,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Model:"
+                        android:text="Year:"
                         android:layout_weight="2"
                         android:textSize="18sp"
-                        android:textColor="#444242"
                         />
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/car_24dp"
+                        android:drawableLeft="@drawable/time_24dp"
                         android:drawablePadding="12dp"
                         android:ems="10"
-                        android:textColor="#FFF"
+                        android:backgroundTint="@color/backgroundGray"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:padding="8dp"
@@ -106,48 +104,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Model:"
+                        android:text="Price:"
                         android:layout_weight="2"
                         android:textSize="18sp"
-                        android:textColor="#444242"
                         />
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:drawableLeft="@drawable/car_24dp"
+                        android:drawableLeft="@drawable/money_24dp"
                         android:drawablePadding="12dp"
                         android:ems="10"
-                        android:textColor="#FFF"
-                        android:inputType="textEmailAddress"
-                        android:maxLines="1"
-                        android:padding="8dp"
-                        android:id="@+id/Details"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:weightSum="3"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Model:"
-                        android:layout_weight="2"
-                        android:textSize="18sp"
-                        android:textColor="#FF515151"
-                        />
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:drawableLeft="@drawable/car_24dp"
-                        android:drawablePadding="12dp"
-                        android:ems="10"
-                        android:textColor="#FFF"
+                        android:backgroundTint="@color/backgroundGray"
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:padding="8dp"
@@ -155,10 +123,12 @@
                 </LinearLayout>
 
 
+
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Log in"
+                    android:text="UPLOAD"
                     android:textColor="#FF515151"
                     android:background="#FF80CBC4"
                     android:textAllCaps="false"
@@ -167,7 +137,7 @@
                     style="@style/Base.TextAppearance.AppCompat.Body1"
                     android:layout_marginTop="19dp"
                     android:textSize="18dp"
-                    android:id="@+id/buttonLogin"
+                    android:id="@+id/upload"
                     />
 
             </LinearLayout>
